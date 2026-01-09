@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: targeting-service-configmap
+  namespace: targeting-service
+data:
+  # Example key-value pair
+  AUTH_SERVICE_URL: a
