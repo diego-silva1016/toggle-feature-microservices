@@ -5,4 +5,4 @@ metadata:
   namespace: targeting-service
 data:
   # Example key-value pair
-  AUTH_SERVICE_URL: a
+  AUTH_SERVICE_URL: http://auth-service.auth-service

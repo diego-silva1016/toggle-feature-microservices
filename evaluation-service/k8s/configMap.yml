@@ -5,6 +5,6 @@ metadata:
   namespace: evaluation-service
 data:
   # Example key-value pair
-  FLAG_SERVICE_URL: a
+  FLAG_SERVICE_URL: http://flag-service.flag-service
   # Example of an entire configuration file content
-  TARGETING_SERVICE_URL: a
+  TARGETING_SERVICE_URL: http://targeting-service.targeting-service

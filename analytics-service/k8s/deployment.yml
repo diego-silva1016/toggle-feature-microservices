@@ -15,15 +15,15 @@ spec:
     spec:
       containers:
         - name: analytics-service
-          image: analytics-service:latest
+          image: 935451498002.dkr.ecr.us-east-1.amazonaws.com/toggle-feature/analytics-service:1.0.0
           imagePullPolicy: IfNotPresent
           resources:
             requests:
               memory: "64Mi" 
-              cpu: "250m"   
+              cpu: "20m"   
             limits:
               memory: "128Mi"
-              cpu: "500m"
+              cpu: "35m"
           ports:
             - containerPort: 8005
           envFrom:

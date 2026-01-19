@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: targeting-service
-          image: targeting-service:latest
+          image: 935451498002.dkr.ecr.us-east-1.amazonaws.com/toggle-feature/targeting-service:1.0.0
           imagePullPolicy: IfNotPresent
           resources:
             requests:

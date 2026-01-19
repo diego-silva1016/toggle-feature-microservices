@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: flag-service
-          image: flag-service:latest
+          image: 935451498002.dkr.ecr.us-east-1.amazonaws.com/toggle-feature/flag-service:1.0.0
           imagePullPolicy: IfNotPresent
           resources:
             requests:

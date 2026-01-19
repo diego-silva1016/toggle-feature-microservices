@@ -15,17 +15,17 @@ spec:
     spec:
       containers:
         - name: evaluation-service
-          image: evaluation-service:latest
+          image: 935451498002.dkr.ecr.us-east-1.amazonaws.com/toggle-feature/evaluation-service:1.0.0
           imagePullPolicy: IfNotPresent
           resources:
             requests:
               memory: "64Mi" 
-              cpu: "250m"   
+              cpu: "5m"   
             limits:
               memory: "128Mi"
-              cpu: "500m"
+              cpu: "10m"
           ports:
-            - containerPort: 8080
+            - containerPort: 8004
           env:
             - name: FLAG_SERVICE_URL
               valueFrom:
@@ -41,7 +41,7 @@ spec:
             - secretRef: 
                 name: evaluation-service-secret
           startupProbe:
-            httpGet: { path: /health, port: 8080 }
+            httpGet: { path: /health, port: 8004 }
             periodSeconds: 5
             failureThreshold: 6
 
